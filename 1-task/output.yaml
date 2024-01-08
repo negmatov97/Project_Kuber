@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2024-01-08T14:58:59Z"
+  labels:
+    kubernetes.io/metadata.name: s-36
+  name: s-36
+  resourceVersion: "4026007"
+  uid: c0d54701-a76a-43c8-afcf-39d74586b759
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active

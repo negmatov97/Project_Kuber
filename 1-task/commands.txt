@@ -1,0 +1,2 @@
+kubectl create namespace s-36
+kubectl get namespace s-36 -o yaml > output.yaml
