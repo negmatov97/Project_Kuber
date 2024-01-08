@@ -1,0 +1,2 @@
+kubectl -n s-36 run nginx1 --image nginx -l project=project author=negmatov -o yaml >> two_pods.yaml
+kubectl -n s-36 run nginx2 --image nginx -l project=project author=negmatov -o yaml >> two_pods.yaml
