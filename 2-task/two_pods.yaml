@@ -1,19 +1,19 @@
 ---
+
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: "2024-01-08T15:09:51Z"
+  creationTimestamp: "2024-01-09T11:18:25Z"
   labels:
-    project: project
+    author: negmatov
+    project: practice
   name: nginx1
   namespace: s-36
-  resourceVersion: "4028065"
-  uid: a5b834ef-4afe-44fe-a0e1-83a06bf67efb
+  resourceVersion: "4219919"
+  uid: 22082a54-8a82-48cd-b615-55bf95f64195
 spec:
   containers:
-  - args:
-    - author=negmatov
-    image: nginx
+  - image: nginx
     imagePullPolicy: Always
     name: nginx1
     resources: {}
@@ -21,7 +21,7 @@ spec:
     terminationMessagePolicy: File
     volumeMounts:
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-rhnvr
+      name: kube-api-access-m6gmr
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
@@ -43,7 +43,7 @@ spec:
     operator: Exists
     tolerationSeconds: 300
   volumes:
-  - name: kube-api-access-rhnvr
+  - name: kube-api-access-m6gmr
     projected:
       defaultMode: 420
       sources:
@@ -64,22 +64,23 @@ spec:
 status:
   phase: Pending
   qosClass: BestEffort
+
 ---
+
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: "2024-01-08T15:10:47Z"
+  creationTimestamp: "2024-01-09T11:19:13Z"
   labels:
-    project: project
+    author: negmatov
+    project: practice
   name: nginx2
   namespace: s-36
-  resourceVersion: "4028313"
-  uid: 72b167d5-aa3b-4969-b0f7-bdb3c62458f0
+  resourceVersion: "4220051"
+  uid: fb26dd47-ee05-4031-a05e-031d3395c8b5
 spec:
   containers:
-  - args:
-    - author=negmatov
-    image: nginx
+  - image: nginx
     imagePullPolicy: Always
     name: nginx2
     resources: {}
@@ -87,7 +88,7 @@ spec:
     terminationMessagePolicy: File
     volumeMounts:
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-n9g4w
+      name: kube-api-access-42d5h
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
@@ -109,7 +110,7 @@ spec:
     operator: Exists
     tolerationSeconds: 300
   volumes:
-  - name: kube-api-access-n9g4w
+  - name: kube-api-access-42d5h
     projected:
       defaultMode: 420
       sources:

@@ -1,0 +1,2 @@
+git clone https://github.com/nvrbckdown/flask-app.git
+ls -l flask-app/ >> output.txt

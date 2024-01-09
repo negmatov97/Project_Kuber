@@ -1,0 +1,2 @@
+kubectl get pods --all-namespaces --selector=project=practice
+kubectl get pods --all-namespaces --selector=project=practice >> output.txt

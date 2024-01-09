@@ -1,0 +1,4 @@
+docker build -t devvinc/flask-app:v1 .
+docker images | grep devvinc/flask-app >> outputs.txt
+docker push devvinc/flask-app:v1
+docker search --limit 1 --no-trunc devvinc

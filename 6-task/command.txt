@@ -1,0 +1,3 @@
+kubectl scale deploy hr-app --replicas=3 -n s-36
+kubectl get deploy -n s-36 -o wide >> output.txt
+kubectl get deploy -n s-36 -o yaml >> output.txt

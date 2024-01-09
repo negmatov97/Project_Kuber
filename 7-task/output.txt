@@ -1,0 +1,8 @@
+total 28
+-rw-r--r-- 1 root root   60 Jan  9 17:57 app.py
+-rw-r--r-- 1 root root  185 Jan  9 18:18 Dockerfile
+-rw-r--r-- 1 root root 1604 Jan  9 17:57 init_db.py
+-rw-r--r-- 1 root root 2201 Jan  9 17:57 main.py
+-rw-r--r-- 1 root root   98 Jan  9 17:57 README.md
+-rw-r--r-- 1 root root  181 Jan  9 17:57 reqs.txt
+drwxr-xr-x 2 root root 4096 Jan  9 17:57 templates
