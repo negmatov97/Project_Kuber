@@ -1,0 +1,5 @@
+Connecting to flask-app-deploy (10.233.3.136:80)
+saving to 'index.html'
+index.html           100% |********************************|    47  0:00:00 ETA
+'index.html' saved
+{"env":"s-36","http_port":"80","string":"Pod"}

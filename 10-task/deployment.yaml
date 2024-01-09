@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flask-app-deploy
+  name: flask-app-deploy
+  namespace: s-36
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flask-app-deploy
+    spec:
+      containers:
+      - image: devvinc/flask-app:v1
+        name: flask-app
+        ports:
+        - containerPort: 5000
+        resources: {}
+status: {}
+

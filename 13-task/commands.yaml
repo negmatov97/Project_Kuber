@@ -1,0 +1,2 @@
+kubectl apply -f ingress.yaml
+curl http://localhost/ingress-check

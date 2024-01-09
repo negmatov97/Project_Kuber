@@ -1,0 +1,2 @@
+kubectl get svc flask-app-deploy -n s-36
+curl http://10.233.3.136:30536/ingress-check

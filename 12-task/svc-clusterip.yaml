@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flask-app-deploy
+  name: flask-app-deploy
+  namespace: s-36
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: flask-app-deploy
+  type: ClusterIP
+status:
+  loadBalancer: {}

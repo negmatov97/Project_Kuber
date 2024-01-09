@@ -1,0 +1,4 @@
+kubectl expose deployment flask-app-deploy --port=80 --target-port=5000 -n s-36 --type=NodePort --dry-run=client -o yaml >> svc.yaml
+kubectl apply -f svc.yaml
+kubectl get service -o yaml -n s-36 >> service-status-output.txt
+kubectl exec -it -n s-36 busybox -- sh -c "wget flask-app-deploy; cat index.html" >> wget-check-busybox.txt

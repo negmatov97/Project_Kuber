@@ -1,0 +1,3 @@
+kubectl create deployment flask-app-deploy --image=devvinc/flask-app:v1 --port=5000 -n s-36 --dry-run=client -o yaml > deployment.yaml
+kubectl apply -f deployment.yaml
+kubectl port-forward -n s-36 deploy/flask-app-deploy 3300:5000

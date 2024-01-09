@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: flask-app-ingress
+  namespace: s-36
+spec:
+  rules:
+  - host: localhost  # Replace with your actual domain
+    http:
+      paths:
+      - path: /ingress-check
+        pathType: Exact
+        backend:
+          service:
+            name: flask-app-deploy
+            port:
+              number: 80
+
